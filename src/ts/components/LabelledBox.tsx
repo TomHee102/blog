@@ -16,17 +16,17 @@ interface LabelledBoxProps {
 
 export default function LabelledBox(props: LabelledBoxProps) {
     return(
-        <Box sx={{
+        <Box className="labelled-box" sx={{
             p: 2,
             border: '1px dashed',
-            borderColor: 'dimgrey',}}>
+            borderColor: '#9c9c83',}}>
             <div className="label-header">
                 <div className="label-left">{props.header.leftText}</div>
                 <div className="label-right">{props.header.rightText}</div>
             </div>
-            <div className="body" style={props.bodyStyle}>
+            <p className="content" style={props.bodyStyle}>
                 {props.children}
-            </div>
+            </p>
             <div className="label-footer">
                 <div className="label-left">{props.footer?.leftText}</div>
                 <div className="label-right">{props.footer?.rightText}</div>

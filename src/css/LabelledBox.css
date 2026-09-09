@@ -1,13 +1,16 @@
-.label-header, .label-footer {
-    display: inline;
-    width: auto;
-    font-size: 11px;
-    text-transform: uppercase;
+.labelled-box {
+    margin: 24px;
+    flex-direction: column;
 }
 
 .label-header, .label-footer {
-    position: relative;
-    justify-content: flex-end;
+    display: grid-lanes;
+    padding-block: 8px;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text-s);
+    vertical-align: middle;
 }
 
 .label-header {
@@ -26,10 +29,7 @@
     float: right;
 }
 
-.body {
-    display: inline-block;
+.content {
     width: auto;
-    font-size: 14px;
-    text-justify: inter-character;
-    padding: 24px
+    margin: 18px;
 }
