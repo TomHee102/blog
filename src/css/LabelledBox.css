@@ -1,0 +1,35 @@
+.label-header, .label-footer {
+    display: inline;
+    width: auto;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.label-header, .label-footer {
+    position: relative;
+    justify-content: flex-end;
+}
+
+.label-header {
+    top: 0;
+}
+
+.label-footer {
+    bottom: 0;
+}
+
+.label-left {
+    float: left;
+}
+
+.label-right {
+    float: right;
+}
+
+.body {
+    display: inline-block;
+    width: auto;
+    font-size: 14px;
+    text-justify: inter-character;
+    padding: 24px
+}
